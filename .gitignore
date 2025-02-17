@@ -1,0 +1,63 @@
+# Ignore Node.js dependencies for frontend & backend
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+
+# Ignore logs
+logs/
+*.log
+debug.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignore build files
+frontend/build/
+frontend/.next/
+frontend/out/
+frontend/.expo/
+frontend/.expo-shared/
+
+backend/dist/
+backend/build/
+
+# Ignore temporary or cache files
+.cache/
+.vite/
+.temp/
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Ignore testing coverage reports
+coverage/
+*.lcov
+
+# React Native specific (if using)
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/build/
+
+# Ignore compiled files
+*.out
+*.exe
+*.dll
+*.so
+*.pyc
+*.pyo
+*.pyd

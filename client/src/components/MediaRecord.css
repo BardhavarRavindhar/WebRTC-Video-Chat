@@ -1,0 +1,224 @@
+/* Apply box-sizing universally */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .heading {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    object-fit: cover;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .end-stream {
+    width: 9vh; 
+    height: 9vh; 
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    border: 1px solid #bc8a01;
+    font-size: 2vh; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .end-stream:hover {
+    background-color: #000;
+  }
+  
+  .end-stream:focus {
+    outline: none;
+  }
+  
+  .end-stream:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .top_live_screen {
+    width: 100%;
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+  }
+  
+  .bottom_tabs_action {
+    height: 10vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    width: 100%;
+  }
+  
+  .mic_on, .switch_camera {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mic_on:hover, .switch_camera:hover {
+    background-color: #000;
+  }
+  
+  /* Small Devices (Phones, max-width: 600px) */
+  @media (max-width: 600px) {
+    .container {
+      padding: 0;
+      border-radius: 0;
+    }
+  
+    .video {
+      border-radius: 5px;
+    }
+  
+    .button {
+      padding: 8px 16px;
+    }
+  
+    .end-stream {
+      width: 9vh;
+      height: 9vh;
+      font-size: 2vh;
+    }
+  
+    .bottom_tabs_action {
+      padding: 5px;
+      gap: 10px;
+    }
+  
+    .mic_on, .switch_camera {
+      padding: 8px 16px;
+      font-size: 4vh;
+    }
+  }
+  
+  /* Medium Devices (Tablets, max-width: 768px) */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0;
+    }
+  
+    .button {
+      padding: 9px 18px;
+    }
+  
+    .end-stream {
+      width: 9vh;
+      height: 9vh;
+      font-size: 2vh;
+    }
+  
+    .bottom_tabs_action {
+      gap: 15px;
+    }
+  }
+  
+  /* Large Devices (Laptops, max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0;
+    }
+  
+    .button {
+      padding: 10px 20px;
+    }
+  
+    .end-stream {
+      width: 9vh;
+      height: 9vh;
+      font-size: 2vh;
+    }
+  
+    .bottom_tabs_action {
+      gap: 20px;
+    }
+  }
+  
+  /* Extra Large Devices (Desktops, min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .container {
+      padding: 0;
+    }
+  
+    .button {
+      padding: 12px 24px;
+    }
+  
+    .end-stream {
+      width: 9vh;
+      height: 8vh;
+      font-size: 2vh;
+    }
+  
+    .bottom_tabs_action {
+      gap: 25px;
+    }
+  }
+  
+  /* EndStreamPage.css */
+  .end-stream-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 0;
+  }
+  
